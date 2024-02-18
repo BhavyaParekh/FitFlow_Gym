@@ -1,0 +1,22 @@
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1b1a1a; /* Black background color */
+  }
+  
+  .login-card {
+    width: 300px;
+    background-color: #1c1a1a; /* White background color for the card */
+    transition: border-color 0.3s ease; /* Transition for border color change */
+    border-color: #343232;
+    border-width: 2px;
+  }
+  
+  .login-card:hover {
+    border-color: red; /* Red border color on hover */
+    border-width : 3px
+  }
+ 
