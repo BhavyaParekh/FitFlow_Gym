@@ -41,26 +41,30 @@ export default function Form1() {
 
   return (
     <>
-      <div className="firstpage">
+      <div className="form-container">
         
-        <h1 style={{color : "yellow", textAlign : "center"}} >Let's Maintain Our Weight....!!</h1>
-        <h2 style={{color : "yellow" , textAlign : "center"}}> Check your weight </h2>
+      <h1>Let's Maintain Your Weight</h1>
+      <h2 className="check-weight-heading">Check Your Weight</h2>
         <form onSubmit={handlesubmit}>
-          <div>
-            <label style={{color : "yellow"}}> Weight (kg)</label>
+        <div className="form-field">
+           <label htmlFor="weight">Weight (kg):</label>
             <input
             className="weight"
-              type="text"
+            id="weight"
+              type="number"
+              step="0.01"
               placeholder="Enter Weight value"
               value={weight}
               onChange={handlew}
             />
           </div>
-          <div>
-            <label style={{color : "yellow"}}> Height(m)</label>
+          <div className="form-field">
+          <label htmlFor="height">Height (m):</label>
             <input
             className="height"
-              type="text"
+            id="height"
+              type="number"
+              step="0.01"
               placeholder="Enter Weight value"
               value={height}
               onChange={handleh}
@@ -69,17 +73,50 @@ export default function Form1() {
           <div>
             <button className="btn" type="submit">
               Submit
-            </button>
+            </button><br/><br/>
             <button className="btn1" onClick={reload} type="submit">
               Reload
             </button>
-          </div>
-          <div className="center">
-            <h3 style={{color : "yellow"}}> Your BMI is :{bmi}</h3>
-            <p><h1 style={{color : "yellow"}}>{message}</h1></p>
-          </div>
-        </form>
-      </div>
+            </div>
+            </form>
+      {bmi && <p>Your BMI is: {bmi}</p>}
+      <p><h1 style={{color : "red"}}>{message}</h1></p>
+
+     </div>
     </>
   );
 }
+// <p><h1 style={{color : "yellow"}}>{message}</h1></p>
+//   return (
+//     <div className="form-container">
+//       <h1>Let's Maintain Your Weight</h1>
+//       <h2 className="check-weight-heading">Check Your Weight</h2>
+//       <form onSubmit={calculateBMI}>
+//         <div className="form-field">
+//           <label htmlFor="weight">Weight (kg):</label>
+//           <input
+//             type="number"
+//             id="weight"
+//             value={weight}
+//             onChange={(e) => setWeight(e.target.value)}
+//             required
+//           />
+//         </div>
+//         <div className="form-field">
+//           <label htmlFor="height">Height (m):</label>
+//           <input
+//             type="number"
+//             id="height"
+//             value={height}
+//             onChange={(e) => setHeight(e.target.value)}
+//             required
+//           />
+//         </div>
+//         <button type="submit">Calculate BMI</button>
+//       </form>
+//       {bmi && <p>Your BMI is: {bmi}</p>}
+//     </div>
+//   );
+// }
+
+// export default Form;
