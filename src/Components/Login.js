@@ -1,5 +1,5 @@
  import React from 'react';
- import { Card, Form, Button } from 'react-bootstrap';
+ import {  Form, Button, Container } from 'react-bootstrap';
 //  import 'bootstrap/dist/css/bootstrap.min.css';
 // import 'bootstrap/dist/css/bootstrap.css';
  import './login.css';
@@ -7,9 +7,9 @@
  function Login() {
    return (
      <div className="login-container">
-       <Card className="login-card">
-         <Card.Body>
-           <Card.Title>Login</Card.Title>
+       <Container className="login-card">
+         <Container.Body>
+           <Container.Title>Login</Container.Title>
            <Form>
              <Form.Group controlId="formBasicEmail">
                <Form.Label>Email address</Form.Label>
@@ -27,8 +27,8 @@
                Submit
              </Button>
            </Form>
-         </Card.Body>
-       </Card>
+         </Container.Body>
+       </Container>
      </div>
   );
  }

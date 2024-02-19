@@ -4,7 +4,9 @@ import Header from './Components/Header';
 import Feature from './Components/Feature';
 import ThisSummer from './Components/ThisSummer';
 import About from './Components/About';
- import Login from './Components/Login';
+
+
+
 // 
 import './App.css';
 
@@ -20,7 +22,7 @@ function App() {
       <ThisSummer/>
       <About/>  
       { /*<Form1/> */}
-        <Login/>  
+       
       
     </div>
   );
