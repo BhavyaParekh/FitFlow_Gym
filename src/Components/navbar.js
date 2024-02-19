@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import logo from './images/logo.png'
-import { Link } from 'react-scroll'
+import { Link  , NavLink} from 'react-router-dom'
 
 
 function Navbar() {
@@ -24,15 +24,23 @@ function Navbar() {
         <label className='menu-icon' for='menu-btn'>
             <span className='nav-icon'></span>
         </label>
-        <ul className='menu'>
-            <li><Link to='main'>Home</Link></li>
-            <li><Link to='features'>Routine</Link></li>
-            <li><Link to='summer'>Summer Plans</Link></li>
-            <li><Link to='about'>About US</Link></li>
+        {/* <ul className='menu'>
+            <li><Link to='/main'>Home</Link></li>
+            <li><Link to='/features'>Routine</Link></li>
+            <li><Link to='/summer'>Summer Plans</Link></li>
+            <li><Link to='/about'>About US</Link></li>
             <li><Link to='#'>Your History</Link></li>
-            <li><Link to='login-container'>Login</Link></li>
+            <li><Link to="/login">Login</Link></li>
 
-        </ul>
+        </ul> */}
+          <ul className="menu">
+        <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="/features">Routine</NavLink></li>
+        <li><NavLink to="/summer">Summer Plans</NavLink></li>
+        <li><NavLink to="/about">About US</NavLink></li>
+        <li><NavLink to="/history">Your History</NavLink></li>
+        <li><NavLink to="/login">Login</NavLink></li>
+      </ul>
 
     </nav>
   )

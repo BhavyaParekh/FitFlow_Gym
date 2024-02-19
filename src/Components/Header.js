@@ -9,7 +9,7 @@ function Header() {
             <p className='details'> Empower your body, enrich your mind, and embrace your journey to a healthier you.
              Welcome to maintain your fitness, where every step you take brings you closer to your fitness goals.</p>
              <div className='header-btns'>
-            <a href='#' className='header-btn'>Let's Check Your Fitness</a>
+            <a href='/login' className='header-btn'>Let's Check Your Fitness</a>
         </div>
 
         </div>

@@ -9,7 +9,7 @@ function ThisSummer() {
             <p className="details"> You will have to follow routine provided by us in this summer , so after this season you will 
             be mentally attach to your body fitness and become health consious </p>
             <div className="pr-btns">
-                <a href="#" className="pr-btn"> Let's check your fitness </a>
+                <a href="/login" className="pr-btn"> Let's check your fitness </a>
 
             </div>
 

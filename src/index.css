@@ -176,6 +176,7 @@ nav .menu-btn,
     color: #fff;
     font-size: 3rem;
 }
+
 .a-container{
     display: flex;
     justify-content: center;
@@ -459,6 +460,9 @@ nav .menu-btn,
         margin-bottom: 100px;
     }
 }
+
+
+ 
 @media(max-width:600px){
 	.name{
 		width:60%;
@@ -561,3 +565,154 @@ nav .menu-btn,
                 height:400px;
             }
         }
+
+
+        /* .login-container {
+            max-width: 400px;
+            margin: 0 auto;
+          }
+          
+          form {
+            display: flex;
+            flex-direction: column;
+          }
+          
+          input {
+            margin-bottom: 10px;
+            padding: 8px;
+          }
+          
+          button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+          }
+          
+          /* Media Queries */
+          /*@media screen and (max-width: 600px) {
+            .login-container {
+              max-width: 300px;
+            }
+          } */
+
+          /* .history-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+          }
+          
+          .history-info {
+            margin-top: 20px;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+          }
+          
+          /* Responsive Styles */
+         /* @media screen and (max-width: 768px) {
+            .history-container {
+              padding: 10px;
+            }
+            
+            .history-info {
+              padding: 10px;
+            }
+          } */
+          .history-container {
+            max-width: 1000px; /* Increase container size */
+            margin: 0 auto;
+            padding: 40px; /* Increase padding */
+            background-color: #000; /* Black background */
+            color: #FF0000; /* Red text color */
+          }
+          
+          .history-info {
+            margin-top: 20px;
+            background-color: #383838;
+            padding: 20px;
+            border-radius: 5px;
+          }
+          
+          /* Responsive Styles */
+          @media screen and (max-width: 768px) {
+            .history-container {
+              padding: 20px; /* Adjust padding for smaller screens */
+            }
+            
+            .history-info {
+              padding: 10px;
+            }
+          }
+
+          .login-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #000;
+            color: #de1010;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          }
+          
+          .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+          }
+          
+          form {
+            display: flex;
+            flex-direction: column;
+          }
+          
+          input {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            background-color: transparent;
+            color: #fff;
+          }
+          
+          button {
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #FF0000;
+            color: #fff;
+            cursor: pointer;
+          }
+          
+          button:hover {
+            background-color: #FF3333;
+          }
+          
+          /* Responsive Styles */
+          @media screen and (max-width: 768px) {
+            .login-container {
+              padding: 20px;
+            }
+          }
+          
+          .signup-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #000;
+            color: #df0b0b;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          }
+          
+          .signup-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+          }
+          
+          /* Responsive Styles */
+          @media screen and (max-width: 768px) {
+            .signup-container {
+              padding: 20px;
+            }
+          }
