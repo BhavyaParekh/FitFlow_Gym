@@ -77,7 +77,7 @@ input{
     margin: 50px auto;
     padding: 20px;
     background-color: #000;
-    color: #49c361;
+    color: #c87133;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
@@ -122,10 +122,10 @@ input{
   }
   .btn1{
     width: 70px;
-    background-color: #164326;
+    background-color: #be601d;
   }
   .btn{
-    background-color: #164326;
+    background-color: #c95c29;
   }
   
   button:hover {
