@@ -13,7 +13,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/users")
 public class UserController {
-
+    // autowiring the services methods
     @Autowired
     private UserService userService;
     //post - create user
