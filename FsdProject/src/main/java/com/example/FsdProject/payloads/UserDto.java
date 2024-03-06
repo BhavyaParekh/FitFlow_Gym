@@ -17,5 +17,8 @@ public class UserDto {
     private String name;
     private String email;
     private String password;
+    private float height;
+    private float weight;
+    private float bmi;
 
 }
