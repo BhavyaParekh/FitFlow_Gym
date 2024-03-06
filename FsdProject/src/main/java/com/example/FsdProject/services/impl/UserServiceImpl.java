@@ -7,10 +7,12 @@ import com.example.FsdProject.services.UserService;
 import com.example.FsdProject.exceptions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.config.ConfigDataResourceNotFoundException;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
 public class UserServiceImpl implements UserService {
 
     @Autowired
@@ -29,6 +31,9 @@ public class UserServiceImpl implements UserService {
         user.setName(userDto.getName());
         user.setEmail(userDto.getEmail());
         user.setPassword(userDto.getPassword());
+        user.setHeight(userDto.getHeight());
+        user.setWeight(userDto.getWeight());
+        user.setBmi(userDto.getBmi());
         User updatedUser = this.userRepo.save(user);
         UserDto userDto1 = this.userToDto(updatedUser);
 
@@ -62,6 +67,9 @@ public class UserServiceImpl implements UserService {
         user.setName(userDto.getName());
         user.setEmail(userDto.getEmail());
         user.setPassword(userDto.getPassword());
+        user.setHeight(userDto.getHeight());
+        user.setWeight(userDto.getWeight());
+        user.setBmi(userDto.getBmi());
         return user;
     }
 
@@ -71,6 +79,9 @@ public class UserServiceImpl implements UserService {
         userDto.setName(user.getName());
         userDto.setEmail(user.getEmail());
         userDto.setPassword(user.getPassword());
+        userDto.setHeight(user.getHeight());
+        userDto.setWeight(user.getWeight());
+        userDto.setBmi(user.getBmi());
         return userDto;
     }
 }
